@@ -15,10 +15,11 @@ public class HelloController extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         System.out.println("@@@@@@@@ inside the doGet() method");
 
+        String name = request.getParameter("name");
         response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
         writer.println("<html><body>");
-        writer.println("<h1>" + hellService.greet() + "</h1>");
+        writer.println("<h1>" + hellService.greet(name) + "</h1>");
         writer.println("</body></html>");
     }
 
