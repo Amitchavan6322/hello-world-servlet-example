@@ -5,12 +5,12 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>helloController</servlet-name>
-    <servlet-class>com.amit.practice.servlet.controller.HelloController</servlet-class>
+    <servlet-name>bookController</servlet-name>
+    <servlet-class>com.amit.book.inventory.controller.BookController</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>helloController</servlet-name>
-    <url-pattern>/hello-controller</url-pattern>
+    <servlet-name>bookController</servlet-name>
+    <url-pattern>/book-controller</url-pattern>
   </servlet-mapping>
 </web-app>
